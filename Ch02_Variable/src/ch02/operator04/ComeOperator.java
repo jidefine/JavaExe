@@ -1,7 +1,8 @@
 package ch02.operator04;
 
 public class ComeOperator {
-	private void maid() {
+	
+	public static void main(String[] args) {
 		int num0 = 100;
 		int num1 = 10;
 		int num2 = 100;
