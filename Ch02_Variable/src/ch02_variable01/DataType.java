@@ -10,6 +10,7 @@ public class DataType {
 		String name = "홍길동"; // 문자열
 		boolean isRun = true; // 논리형(true, false)
 		String str = "a"; // 문자열처럼 처리
+		String str = "a"; // 문자열처럼 처리
 				
 		System.out.println(num);
 		num = 999;
