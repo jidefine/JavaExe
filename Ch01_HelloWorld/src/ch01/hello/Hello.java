@@ -11,5 +11,9 @@ public class Hello {
 		System.out.println("Hello, NCP08");
 		System.out.println("Hello, 이게 되네");
 		
+		for (int i=0; i<10; i++) {
+			System.out.println(i + ", ");
+		}
+		
 	}
 }
