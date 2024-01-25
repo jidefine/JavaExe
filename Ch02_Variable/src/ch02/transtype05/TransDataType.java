@@ -21,7 +21,7 @@ public class TransDataType {
 		int nAvg = (int)avg;
 		System.out.println("평균은 "+ nAvg + "입니다.");
 		
-		//문자,유니코드
+		//문자,유니코드변환
 		char ch = 'A';
 		System.out.println(ch);
 		System.out.println((int)ch);
