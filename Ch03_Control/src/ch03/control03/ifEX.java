@@ -11,7 +11,7 @@ public class ifEX {
 		System.out.print("0~100 사이의 점수 입력 >> ");
 		score = sc.nextInt();
 		
-		//if문은 ()의 결과가 참일 때
+		//if문은 ()의 결과가 참일 때 아래의 조건을 실행
 		if(score>= 90)
 			System.out.println("A학점");
 		else if(score>= 80)
