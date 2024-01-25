@@ -13,6 +13,7 @@ public class Resolve2 {
 		int num1 = num / 10;
 		int num2 = num % 10;
 		
+//		풀이방법 1)
 		if(num1==3 | num1==6 | num1==9 ) {
 			if(num2==3)
 				System.out.println("박수짝짝");
@@ -23,6 +24,22 @@ public class Resolve2 {
 			else
 				System.out.println("박수짝");
 		}
+		else if(num1!=3 | num1!=6 | num1!=9) {
+			if(num2==3 | num2==6 | num2==9)
+				System.out.println("박수짝");
+		}
+
+//		풀이방법 2)
+//		if(num1==3 | num1==6 | num1==9 ) {
+//			if(num2==3 | num2==6 | num2==9)
+//				System.out.println("박수짝짝");
+//			else
+//				System.out.println("박수짝");
+//		}
+//		else if(num1!=3 | num1!=6 | num1!=9) {
+//			if(num2==3 | num2==6 | num2==9)
+//				System.out.println("박수짝");
+//		}
 
 	}
 
