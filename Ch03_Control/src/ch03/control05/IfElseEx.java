@@ -28,7 +28,7 @@ public class IfElseEx {
 		else
 			System.out.println("해당 메뉴가 없습니다");
 
-		
+		sc.close();
 		
 	}
 
