@@ -10,7 +10,7 @@ public class Resolve3 {
 			sum+=i;
 			i++; // 증감식(변화: 얼마만큼)
 		}
-		System.out.print(sum);
+		System.out.print("1~10까지의 합은 " + sum);
 	}
 
 
