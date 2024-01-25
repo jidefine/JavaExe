@@ -7,17 +7,16 @@ public class Resolve12 {
 	public static void main(String[] args) {
 		
 		int num;
-		int result;
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.print("양의 정수 >> ");
 		num = sc.nextInt();
-
-		for(int i =1;i<= num;) { // ;을 통해서 한눈에 볼 수 있도록 사용
-			result= i * 3; // 증가
-			System.out.print(result + " "); // 실행
-			i++;
-		}
+		
+		do {
+				System.out.println("감사합니다");
+				num--;
+		}while(num>0);// 조건(언제까지)
+			sc.close(); // 키보드와 연결을 닫음
 	}
 
 }
