@@ -6,6 +6,8 @@ public class SwitchValueEx {
 		String grade = "B";
 		
 		int score1 = 0;
+		//swtich는 대소 비교 불가능 / 같은 경우만 비교 가능
+		//ifelse문은 대소 비교 가능
 		switch(grade) {
 		case "A":
 			score1 = 100;
