@@ -1,4 +1,4 @@
-package ch02.signOperator08;
+package ch02.signOperator09;
 
 public class SignOperator {
 
