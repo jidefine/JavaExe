@@ -15,7 +15,7 @@ public class LogicOperator {
 		logic = true || true;
 		System.out.println("true || true => " + logic);
 		logic = true || false;
-		System.out.println("true || true => " + logic);
+		System.out.println("true || false => " + logic);
 		// Xor 연산
 		logic = true ^ true;
 		System.out.println("true ^ true => " + logic);
