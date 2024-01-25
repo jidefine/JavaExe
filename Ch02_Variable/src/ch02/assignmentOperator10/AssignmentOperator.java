@@ -11,10 +11,14 @@ public class AssignmentOperator {
 		 * 
 		 * =는 항상 오른쪽의 연산이 끝난 후 왼쪽에 대입
 		 */
+//		대입연산자는 가장 나중에 실행됨
+//		가장 먼저 연산하고 싶은 부분은 괄호로 묶을 것
 		num = num + 10;
 		System.out.println(num);
+		
 		num = num + 20;
 		System.out.println(num);
+		
 		// 복합 대입 연산자
 		num += 30;
 		System.out.println(num);
