@@ -22,13 +22,53 @@ public class Resolve3 {
 		System.out.print("정수 3 >> ");
 		c = sc.nextInt();
 		
+//		tutor 풀이
+		boolean bTriangle = false;
 		
-//		1) 조건(삼항)연산자 사용
+//		if((num0+num1 > num2) && 
+//		(num1+num2 > num0) &&
+//		(num2+num0 > num1))
+//		bTriangle = true;
+		
+		if((a+b) > c) {
+			if((a+c) > b){
+				if((b+c) > a)
+					bTriangle = true;
+			}
+		}
+		System.out.println("결과는 "+bTriangle);
+		
+//		tutor 풀이2(조건연산자 사용)
+//		Scanner sc = new Scanner(System.in);
+//		
+//		System.out.print("1번째 숫자 입력 >> ");
+//		int num0 = sc.nextInt();
+//		System.out.print("2번째 숫자 입력 >> ");
+//		int num1 = sc.nextInt();
+//		System.out.print("3번째 숫자 입력 >> ");
+//		int num2 = sc.nextInt();
+//		
+//		boolean bTriangle = false;
+//		
+//		boolean cond0 = num0+num1 > num2;
+//		boolean cond1 = num1+num2 > num0;
+//		boolean cond2 = num2+num0 > num1;
+//		
+//		bTriangle = cond0 ? (cond1 ? (cond2 ? true : false) 
+//				                   : false) 
+//				          : false; 				
+//		
+//
+//		System.out.println("삼각형의 조건이 " + bTriangle + "입니다");
+//		
+//		sc.close();		
+		
+//		내가 푼 풀이_조건(삼항)연산자 사용
 //		A ? B : C; 3개의 항목
 //		항목의 조건 ? true면 실행 : false면 실행
-		result = (b < (a + c)) ? "삼각형을 만들 수 있습니다.":"삼각형을 만들 수 없습니다.";
-		
-		System.out.println(result);
+//		result = (b < (a + c)) ? "삼각형을 만들 수 있습니다.":"삼각형을 만들 수 없습니다.";
+//		
+//		System.out.println(result);
 		sc.close();
 	}
 
