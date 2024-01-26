@@ -15,8 +15,8 @@ public class ArrayEx {
 		System.out.println(Arrays.toString(scores));
 		
 		// 정렬
-		Array.sort(scores);
-		
+		Arrays.sort(scores);
+		System.out.println(Arrays.toString(scores));
 	}
 
 }
