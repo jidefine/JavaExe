@@ -18,6 +18,10 @@ public class Resolve13 {
 			System.out.print(result + " "); // 실행
 			i++;
 		}
+//		tutor 풀이 추가
+//		for(int i=1;i<=num;i++)
+//			System.out.println(3*i);
+		
 	}
 
 }
