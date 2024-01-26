@@ -17,6 +17,12 @@ public class Resolve12 {
 				num--;
 		}while(num>0);// 조건(언제까지)
 			sc.close(); // 키보드와 연결을 닫음
+			
+//		tutor 풀이 추가
+//		System.out.print("양의 정수 입력 >> ");
+//		int num = sc.nextInt();
+//		for(int i=1;i<=num;i++)
+//			System.out.println(i + " 감사합니다.");
 	}
 
 }
