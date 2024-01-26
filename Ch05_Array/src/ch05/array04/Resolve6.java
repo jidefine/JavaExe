@@ -13,7 +13,7 @@ public class Resolve6 {
 		
 		for(int num = 0;num<5;num++) {
 			System.out.print("학생 "+ num +" 이름 입력 >> ");
-			names [num] = sc.next(); // 문자열 입력
+			names[num] = sc.next(); // 문자열 입력
 			System.out.print("학생 "+ num +" 성적 입력 >> ");
 			score[num] = sc.nextInt();
 		}
