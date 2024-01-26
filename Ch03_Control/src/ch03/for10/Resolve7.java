@@ -9,7 +9,6 @@ public class Resolve7 {
 				 * 조건을 검사하여 반복 결정
 				 */
 			int num = 1; //초기값
-			int sum = 0;
 			do {
 				if(num % 2 == 0) //1~10 중에 짝수만 출력
 					System.out.print(num + " ");
