@@ -1,6 +1,5 @@
 package ch03.continue11;
 
-import java.security.DomainCombiner;
 import java.util.Scanner;
 
 public class Resovle1 {
