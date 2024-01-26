@@ -1,5 +1,6 @@
 package ch05.array03;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayEx {
@@ -22,11 +23,25 @@ public class ArrayEx {
 		int[] math = {100, 80, 78, 68, 90};
 		System.out.println("배열의 크기 " +  math.length);
 
-		int[] end = new int[] {100, 80, 78, 68}; // 할당하면서 동시에 초기화
-		System.out.println("배열의 크기 " +  end.length);
+		int[] eng = new int[] {100, 80, 78, 68}; // 할당하면서 동시에 초기화
+		System.out.println("배열의 크기 " +  eng.length);
 		
+		System.out.println(Arrays.toString(kor));
+		System.out.println(Arrays.toString(math));
+		System.out.println(Arrays.toString(eng));
 		System.out.println();
 		
+		for(int i=0;i<kor.length;i++)
+			System.out.print(kor[i] + " ");
+		System.out.println();
+		
+		for(int i=0;i<math.length;i++)
+			System.out.print(math[i] + " ");
+		System.out.println();
+		
+		for(int i=0;i<eng.length;i++)
+			System.out.print(eng[i] + " ");
+		System.out.println();
 		
 		
 	}
