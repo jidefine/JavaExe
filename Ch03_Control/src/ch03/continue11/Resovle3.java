@@ -20,7 +20,7 @@ public class Resovle3 {
 				money = sc.nextInt();
 			}
 			
-			
+			sc.close();
 		}
 	}
 }

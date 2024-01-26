@@ -18,7 +18,7 @@ public class Resolve14 {
 			System.out.println(num + " * " + i + " = " + result); // 실행
 			i++;
 		}
-
+		sc.close();
 //		tutor 풀이 추가
 //		for(int i=1;i<=9;i++)
 //			System.out.printf("%d * %d = %d\n", 

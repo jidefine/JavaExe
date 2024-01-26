@@ -29,7 +29,7 @@ public class Resolve2 {
 			if(num2==3 | num2==6 | num2==9)
 				System.out.println("박수짝");
 		}
-
+		sc.close();
 //		풀이방법 2)
 //		if(num1==3 | num1==6 | num1==9 ) {
 //			if(num2==3 | num2==6 | num2==9)

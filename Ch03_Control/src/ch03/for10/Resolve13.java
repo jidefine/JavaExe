@@ -21,7 +21,7 @@ public class Resolve13 {
 //		tutor 풀이 추가
 //		for(int i=1;i<=num;i++)
 //			System.out.println(3*i);
-		
+		sc.close();
 	}
 
 }

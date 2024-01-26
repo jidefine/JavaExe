@@ -42,7 +42,9 @@ public class Resolve1 {
 			System.out.println("100원 "+ coin100s + "매");
 			System.out.println("50원 "+ coin50s + "매");
 			System.out.println("10원 "+ coin10s + "매");
+			sc.close();
 		}
+		
 //		int money;
 //		
 //		Scanner sc = new Scanner(System.in);

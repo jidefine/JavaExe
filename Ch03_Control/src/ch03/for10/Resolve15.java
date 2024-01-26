@@ -20,7 +20,7 @@ public class Resolve15 {
 			num = sc.nextInt();
 		}
 		System.out.print("합은 " + sum);
-		
+		sc.close();
 //		풀이방법 2)
 //		int num;
 //		do {
