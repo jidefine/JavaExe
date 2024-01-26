@@ -26,7 +26,7 @@ public class Resolve3 {
 //		1) 조건(삼항)연산자 사용
 //		A ? B : C; 3개의 항목
 //		항목의 조건 ? true면 실행 : false면 실행
-		result = (b > a + c) ? "삼각형을 만들 수 있습니다.":"삼각형을 만들 수 없습니다.";
+		result = (b < (a + c)) ? "삼각형을 만들 수 있습니다.":"삼각형을 만들 수 없습니다.";
 		
 		System.out.println(result);
 		sc.close();
