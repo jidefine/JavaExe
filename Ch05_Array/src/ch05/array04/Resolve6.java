@@ -2,10 +2,11 @@ package ch05.array04;
 
 import java.util.Scanner;
 
+// 
+
 public class Resolve6 {
 	public static void main(String[] args) {
 
-		int i = 0;
 		String[] names = new String[5]; // 학생 이름
 		int[] score = new int[5]; //학생 성적
 		
@@ -14,15 +15,24 @@ public class Resolve6 {
 		for(int num = 0;num<5;num++) {
 			System.out.print("학생 "+ num +" 이름 입력 >> ");
 			names[num] = sc.next(); // 문자열 입력
-			System.out.print("학생 "+ num +" 성적 입력 >> ");
+			System.out.println("학생 "+ num +" 성적 입력 >> ");
 			score[num] = sc.nextInt();
 		}
-//		if(score[num]>=90)
-//			System.out.print("A");
-//
-//		for(i=0;i<arr.length;i++)
-//			System.out.println("arr["+i +"] : " + arr[i]);
-//		System.out.println();
 		
+		for(int i =0;i<score.length;i++) {
+			if(score[i]>=90)
+				System.out.println(names[i] + " : A학점");
+			else if(score[i]>=80)
+				System.out.println(names[i] +" : B학점");
+			else if(score[i]>=70)
+				System.out.println(names[i] +" : C학점");
+			else if(score[i]>=60)
+				System.out.println(names[i] +" : D학점");
+			else
+				System.out.println(names[i] +" : F학점");
+		}
+			
+		sc.close();
+
 	}
 }
