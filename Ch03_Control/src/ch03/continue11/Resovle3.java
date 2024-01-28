@@ -6,21 +6,37 @@ public class Resovle3 {
 	public static void main(String[] args) {
 		
 		int money = 0;
-		System.out.println("--------------");
-		System.out.println("1.예금 2.출금 3.잔고 4.종료");
-		System.out.println("--------------");
+		
+		Scanner sc = new Scanner(System.in);
 		
 		while(true) {
-			Scanner sc = new Scanner(System.in);
+			System.out.println("--------------");
+			System.out.println("1.예금 2.출금 3.잔고 4.종료");
+			System.out.println("--------------");
 			System.out.print("선택 >> ");
 			int num = sc.nextInt();
 			
 			if(num == 1) {
 				System.out.print("예금액 >> ");
-				money = sc.nextInt();
+				int deposit = sc.nextInt();
+				money += deposit;
 			}
-			
-			sc.close();
+			else if(num == 2) {
+				System.out.println("출금액 >> ");
+				int withdrew = sc.nextInt();
+				money -= withdrew;
+			}
+			else if(num == 3) {
+				System.out.println("잔고 >> " + money);
+			}
+			else
+				System.out.println("프로그램 종료");
+				if(num == 4) {
+					break; // while 무한루프에서는 if문과 괄호를 사용해여 break를 걸어준다.
+				}
+				
 		}
+
 	}
 }
+
