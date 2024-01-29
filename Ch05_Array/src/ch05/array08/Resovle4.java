@@ -21,6 +21,9 @@ public class Resovle4 {
 			}
 
 		}
+		
+		
+		
 		System.out.println(Arrays.toString(numArr));
 	}
 }
