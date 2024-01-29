@@ -19,7 +19,7 @@ public class Resolve6_tutor {
 			String name = sc.nextLine();
 			System.out.print((i+1) + "번째 학생 점수 >> ");
 			String strScore = sc.nextLine();
-			int score = Integer.parseInt(strScore);
+			int score = Integer.parseInt(strScore); //교재 70~71 참고
 			
 			nameArr[i] = name;
 			scoreArr[i] = score;
