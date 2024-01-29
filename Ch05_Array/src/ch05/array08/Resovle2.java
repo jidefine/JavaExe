@@ -7,7 +7,7 @@ public class Resovle2 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] num= new int[5];
-		int[] list= new int[5];
+		int i, j, k, temp;
 		
 		num[0]=1;
 		num[1]=3;
@@ -15,22 +15,21 @@ public class Resovle2 {
 		num[3]=2;
 		num[4]=5;
 		
-		if(num[0]<num[1])
-			if(num[0]<num[2])
-				if(num[0]<num[3])
-					if(num[0]<num[4])
-						list[0]=num[0];
-		if(num[0]<num[1])
-			if(num[0]<num[2])
-				if(num[0]<num[3])
-					if(num[0]<num[4])
-						list[1]=num[1];
-						
-		
-		Arrays.sort(num);
+		for(i=0; i<num.length; i++) {
+			k = num.length - i;
+			for(j = 1; j < k; j++) {
+                if (num[j - 1] > num[j]) {
+                    temp = num[j - 1];
+                    num[j - 1] = num[j];
+                    num[j] = temp;
+                }
+            }
+
+		}
+			
 		System.out.println(Arrays.toString(num));
-		System.out.println("최소값 : " + num[0]);
-		System.out.println("최대값 : " + num[4]);
+//		System.out.println("최소값 : " + num[0]);
+//		System.out.println("최대값 : " + num[4]);
 	}
 
 }
