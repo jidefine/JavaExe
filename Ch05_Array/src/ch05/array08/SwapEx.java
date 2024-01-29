@@ -2,6 +2,8 @@ package ch05.array08;
 
 public class SwapEx {
 	public static void main(String[] args) {
+		
+//		swap : 두 변수의 값을 서로 바꾼다는 것을 의미한다.
 		/*2개 변수의 값을 바꾸려면
 		 * Python은 아래처럼 가능
 		 * a = 10; 
