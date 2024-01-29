@@ -5,6 +5,10 @@ import java.util.Scanner;
 // 메서드를 만들기 전 코드
 public class MethodEx2 {
 	// main 메서드 내의 계산하는 부분을 옮긴다.
+	// calcArith의 지역변수 num0, num1, op -> 파라미터라고 하기도 함
+	/* void : 비어있는 
+	 * 		  / return 안하는 함수, 즉 실행만 하는 함수
+	 */
 	public static void calcArith(int num0, int num1, String op) {
 		int result = 0; //결과값 저장 변수
 
