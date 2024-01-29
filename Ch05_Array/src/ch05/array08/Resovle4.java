@@ -1,27 +1,26 @@
 package ch05.array08;
 
 import java.util.Arrays;
+
 // 다시 풀어봐야 함
 public class Resovle4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] numArr= {10, 99, 2, 78, 32};
+		int[] numArr = { 10, 99, 2, 78, 32 };
 		int i, j, k, temp;
-		
-		for(i=0; i<numArr.length; i++) {
+
+		for (i = 0; i < numArr.length; i++) {
 			k = numArr.length - i;
-			for(j = 1; j < k; j++) {
-                if (numArr[j - 1] > numArr[j]) {
-                    temp = numArr[j - 1];
-                    numArr[j - 1] = numArr[j];
-                    numArr[j] = temp;
-                }
-            }
+			for (j = 1; j < k; j++) {
+				if (numArr[j - 1] > numArr[j]) {
+					temp = numArr[j - 1];
+					numArr[j - 1] = numArr[j];
+					numArr[j] = temp;
+				}
+			}
 
 		}
-			
 		System.out.println(Arrays.toString(numArr));
 	}
-
 }
