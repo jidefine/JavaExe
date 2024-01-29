@@ -1,7 +1,7 @@
 package ch05.array08;
 
 import java.util.Arrays;
-
+// 다시 풀어봐야 함
 public class Resovle2 {
 
 	public static void main(String[] args) {
