@@ -1,5 +1,5 @@
 package ch05.array05.ch05.sec09;
-
+// 교재 190쪽 공부 필요
 public class AdvancedForExample {
 
 	public static void main(String[] args) {
