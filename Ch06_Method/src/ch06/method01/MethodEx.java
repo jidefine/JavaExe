@@ -21,14 +21,19 @@ public class MethodEx {
 		switch(op) {
 		case "+":
 			result = num0 + num1;
+			break;
 		case "-":
 			result = num0 - num1;
+			break;
 		case "*":
 			result = num0 * num1;
+			break;
 		case "/":
-			result = num0 + num1;
+			result = num0 / num1;
+			break;
 		case "%":
 			result = num0 % num1;
+			break;
 		default:
 			System.out.println("연산 불가능");
 			break;
