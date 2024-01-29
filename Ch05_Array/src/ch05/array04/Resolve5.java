@@ -11,7 +11,8 @@ public class Resolve5 {
 		Scanner sc = new Scanner(System.in);
 		
 		for(int num = 0;num<10;num++) {
-			System.out.print("arr["+ num +"] 입력 >> ");
+			System.out.print("arr["+ (num+1) +"] 입력 >> "); 
+			//num+1을 통해 1~10까지 출력
 			arr[num] = sc.nextInt();
 		}	
 
