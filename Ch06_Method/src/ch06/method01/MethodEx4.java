@@ -8,7 +8,6 @@ public class MethodEx4 {
 	public static int calcArith(int num0, int num1, String op) {
 		int result = 0; // 결과값 저장 변수
 
-		// 2) 계산을 하는 부분
 		switch (op) {
 		case "+":
 			result = num0 + num1;
