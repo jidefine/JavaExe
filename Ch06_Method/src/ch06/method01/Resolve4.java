@@ -1,0 +1,20 @@
+package ch06.method01;
+/* 3. int result = total(10, 100);
+위처럼 사용하면 result에는 10부터 100까지의 누적합이 저장되어야 합니다
+total메서드를 작성하고 사용해보세요.
+*/
+public class Resolve4 {
+	public static void gugudan(int num) {
+		int result = 0;
+		for(int i = 1; i <=9; i++) {
+			int dan = num * i;
+			System.out.println(num + " * " + i + " = " + dan);
+		}
+		System.out.println("끝");
+	}
+	public static void main(String[] args) {
+		 gugudan(3);
+
+	}
+
+}
