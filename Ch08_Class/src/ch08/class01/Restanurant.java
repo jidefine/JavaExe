@@ -12,7 +12,7 @@ import java.util.Scanner;
  * [클래스의 대상]
  * 큰 개념의 명사 / 유기적인 큰 개념
  * 동사들의 집합(Controller, Business Layer)
- * 필드들의 집합(Vo, Dao)
+ * 필드들의 집합(Vo, Dto)
  */
 public class Restanurant {
 	private String[] foods = { "냉면", "떡볶이", "쌀국수", "칼국수", "순대", "튀김", "라면" };
