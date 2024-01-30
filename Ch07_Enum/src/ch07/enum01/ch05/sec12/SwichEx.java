@@ -17,19 +17,19 @@ public class SwichEx {
 		int sel = sc.nextInt();
 //		sel의 값은 
 		switch(sel){
-		case 1:
+		case Menu.ZZATANGMYUN: //리터럴 상수DLS 1을 ZZATANGMYUN로 변경
 			System.out.println("짜장면이 나왔습니다");
 			break;
-		case 2:
+		case Menu.ZZATPONG: //상수는 가급적 문자로 치환하는 것이 추후 수정시 편함
 			System.out.println("짬뽕이 나왔습니다");
 			break;
-		case 3:
+		case Menu.TANGSUYUK:
 			System.out.println("탕수육이 나왔습니다");
 			break;
-		case 4:
+		case Menu.YONGANSUL:
 			System.out.println("유산슬이 나왔습니다");
 			break;
-		case 5:
+		case Menu.YOULINGI:
 			System.out.println("유린기가 나왔습니다");
 			break;
 		default: // else의 의미
