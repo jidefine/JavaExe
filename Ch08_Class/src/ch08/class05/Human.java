@@ -8,6 +8,7 @@ package ch08.class05;
 //[객체지향의 기본 원칙]
 //필드 변수 : private을 해주는 관습이 있음(외부 직접 접근 불허)
 //메서드 : public을 해주는 관습이 있음(외부 사용 가능)
+
 public class Human {
 	public String name;
 	public int age;
