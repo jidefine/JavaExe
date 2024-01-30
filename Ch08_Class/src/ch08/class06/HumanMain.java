@@ -14,6 +14,7 @@ public class HumanMain {
 //		human.name = "홀길동";
 //		human.age = 24;
 //		human.score = 4.5;
+		
 		human.setName("홍길동");
 		human.setAge(24);
 		human.setScore(4.5);
