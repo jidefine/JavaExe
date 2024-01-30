@@ -13,6 +13,11 @@ public class Resolve1 {
 		else
 			result = num0;
 		return result;
+		
+//		1) 조건(삼항)연산자 사용
+//		A ? B : C; 3개의 항목
+//		항목의 조건 ? true면 실행 : false면 실행
+//		return num0 < num1 ? num1 : num0;
 	}
 	
 	public static int min(int num0, int num1) {
