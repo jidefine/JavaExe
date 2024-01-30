@@ -1,5 +1,7 @@
 package ch08.class05;
 
+import ch08.class06.Human;
+
 public class HumanMain {
 	
 	public static void viewInfo(Human human){
