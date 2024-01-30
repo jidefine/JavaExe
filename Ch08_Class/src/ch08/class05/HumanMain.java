@@ -1,7 +1,5 @@
 package ch08.class05;
 
-import ch08.class06.Human;
-
 public class HumanMain {
 	
 	public static void viewInfo(Human human){
@@ -23,5 +21,7 @@ public class HumanMain {
 		 */
 		human.age = - 10;
 		human.score = - 20.9;
+		
+		viewInfo(human);
 	}
 }
