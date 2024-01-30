@@ -87,7 +87,7 @@ public class Resovle4 {
 
 		for (int i = 0; i < numArr.length - 1; i++) {
 			for (int j = 0; j < numArr.length - 1 - i; j++) {
-				if (numArr[j] > numArr[j + 1]) {
+				if (numArr[j] > numArr[j + 1]) { // 괄효를 반대로 하면 내림차순됨
 					int temp = numArr[j];
 					numArr[j] = numArr[j + 1];
 					numArr[j + 1] = temp;
