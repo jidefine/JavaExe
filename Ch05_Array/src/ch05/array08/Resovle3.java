@@ -28,6 +28,7 @@ public class Resovle3 {
 		}
 		
 		System.out.println(Arrays.toString(numArr));
+		System.out.println(5/2);
 
 	}
 
