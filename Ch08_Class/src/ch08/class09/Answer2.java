@@ -2,14 +2,14 @@ package ch08.class09;
 
 import java.util.Scanner;
 
-public class answer2 {
+public class Answer2 {
 	// 필드
 	private String[] foods;
 	private int selectNum;
 	private Scanner sc;
 	private String name;
 	
-	public answer2(Scanner sc, String name, String[] foods) {
+	public Answer2(Scanner sc, String name, String[] foods) {
 		this.sc = sc;
 		this.name = name;
 		this.foods = foods;
