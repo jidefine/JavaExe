@@ -65,11 +65,7 @@ public class QuestionClass {
 
 	// 2번 문제에 대한 풀이
 	public static void answer2(Scanner sc) {
-		answer2 rest = new answer2(sc, "중화요리집",
-							new String[]{"짜장면", "짬뽕", "탕수육"});
-		rest.viewMenu();
-		rest.selectFood();
-		rest.deliveryFood();
+		
 	}
 
 	// 3번 문제에 대한 풀이
