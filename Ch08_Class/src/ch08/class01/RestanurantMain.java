@@ -11,7 +11,8 @@ public class RestanurantMain {
 //		우리가 직접 만든 사용자 정의 자료형
 		
 //		객체 = 클래스의 변수
-//		클래스->Restanurant / 객체->rest / 클래스의 생성자형->Restanurant
+//		클래스->Restanurant / 객체->rest / 클래스의 생성자 함수->Restanurant
+//		객체가 메모리에 올라가는 것을 인스턴스됬다고 봄
 //		클래스 객체 = new(힙에 할당) 클래스의 생성차형
  		Restanurant rest = new Restanurant ();
 		rest.viewMenu();

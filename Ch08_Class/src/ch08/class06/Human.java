@@ -14,8 +14,8 @@ public class Human {
 	private double score;
 
 //	Setter
-	public void setName(String _name) {
-		name = _name;
+	public void setName(String _name) { // 기본적으로 변수는 첫번째 단어는 소문자로,
+		name = _name;                   // 두번째 단어의 첫 글자는 대문자로 함
 	}
 
 	public void setAge(int _age) {
@@ -24,14 +24,14 @@ public class Human {
 		age = _age;
 	}
 
-	public void setScore(double _score) {
+	public void setScore(double _score) { //함수는 기본적으로 public으로 함
 		if (_score < 0)
 			return;
 		score = _score;
 	}
 	
 	//Getter
-	public String getName() {
+	public String getName() { //getter를 통해 값을 꺼냄
 		return name;
 	}
 	public int getAge() {

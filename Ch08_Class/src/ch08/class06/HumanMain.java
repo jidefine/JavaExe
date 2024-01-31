@@ -3,7 +3,7 @@ package ch08.class06;
 public class HumanMain {
 	
 	public static void viewInfo(Human human){
-		System.out.println("이름 : " + human.getName());
+		System.out.println("이름 : " + human.getName()); //getter를 통해 값을 꺼냄
 		System.out.println("나이 : " + human.getAge());
 		System.out.println("학점 : " + human.getScore());
 	}

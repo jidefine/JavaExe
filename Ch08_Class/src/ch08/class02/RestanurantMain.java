@@ -33,7 +33,7 @@ public class RestanurantMain {
 		
 		Restanurant rest2 = new Restanurant ();
 		rest2.sc = sc;
- 		rest2.name = "소호정";
+ 		rest2.name = "소호정"; // 동일한 형태지만 각각 다른 값을 내부에 저장
 		rest2.viewMenu();
 		rest2.selectFood();
 		rest2.delivertFood();

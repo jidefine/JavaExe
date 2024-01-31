@@ -7,7 +7,7 @@ public class ArithEx {
 		int a=10, b=5;
 		int result = 0;
 		
-		Arith arith = new Arith();
+		Arith arith = new Arith(); // static을 안 쓰면 이렇게 따로 객체를 지정해야 함?
 		
 		result = arith.add(a, b);
 		System.out.println(result);

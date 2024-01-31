@@ -22,7 +22,7 @@ public class Restaurant {
 	public Restaurant(Scanner sc, String name, String[] foods) {
 			this.sc = sc;
 			this.name = name;
-			this.foods = foods;
+			this.foods = foods; //생성자?
 			
 			// 객체가 생성되고 자동으로 처리해야 하는 작업을 코딩
 			System.out.println(this.name +"식당을 청소한다~");
