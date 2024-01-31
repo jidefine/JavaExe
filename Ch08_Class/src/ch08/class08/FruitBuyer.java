@@ -16,7 +16,7 @@ public class FruitBuyer {
 	}
 
 	public void showBuyResult() {
-		System.out.println("*** 과일 판매자의 현재 상황 ***");
+		System.out.println("*** 과일 구매자의 현재 상황 ***");
 		System.out.println("현재 잔액 : " + money);
 		System.out.println("사과 개수 : " + numOfApple);
 	}
