@@ -8,7 +8,7 @@ public class ExtendsMain {
 		child.wealth();
 		child.play();
 		
-		System.out.println("잘생김 점수 : "+child.handxomeScore);
+		System.out.println("잘생김 점수 : "+child.handsomeScore);
 		System.out.println("돈 : "+child.money);
 		System.out.println("즐거운 날 : "+child.day);
 	}
