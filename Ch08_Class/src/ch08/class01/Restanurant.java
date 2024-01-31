@@ -40,7 +40,7 @@ public class Restanurant {
 	}
 
 	public void delivertFood() {
-		String food = foods[selectNum]; 문자열 배열 foods 의 selectNum 번째 위치에 해당하는 수를 food라는 변수에 저장
+		String food = foods[selectNum]; //문자열 배열 foods 의 selectNum 번째 위치에 해당하는 수를 food라는 변수에 저장
 		System.out.println(food + "이 나왔습니다.");
 		System.out.println("맛있게 드세요 ^^");
 	}
