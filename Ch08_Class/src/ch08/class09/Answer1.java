@@ -24,4 +24,5 @@ public class Answer1 {
 		System.out.println("남은 사과 : " + numOfApple);
 		System.out.println("판매 수익 : " + saleMoney);
 	}
+
 }

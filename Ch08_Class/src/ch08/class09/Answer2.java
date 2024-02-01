@@ -32,4 +32,6 @@ public class Answer2 {
 		System.out.println(food + "이 나왔습니다.");
 		System.out.println("맛있게 드세요 ^^");
 	}
+	
+
 }
