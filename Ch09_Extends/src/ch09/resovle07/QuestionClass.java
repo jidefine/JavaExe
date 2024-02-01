@@ -164,7 +164,7 @@ public class QuestionClass {
 
 	// 5번 문제에 대한 풀이
 	public static void answer5(Scanner sc) {
-		Child alex = new Child(15);
+		Child alex = new Child(15); //Child(15)은 생성자 호출을 뜻함
 		Child james = new Child(9);
 		
 		alex.get(james, 2);

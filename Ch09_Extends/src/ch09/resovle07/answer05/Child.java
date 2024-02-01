@@ -4,6 +4,9 @@ package ch09.resovle07.answer05;
 //1) 필드 -> private
 //   메서트 -> pubilc
 //2) 메서드 중에 내부에서만 사용하는 메서드 -> private
+
+//클래스의 캡슙화 : 불필요한 것은 굳이 public로 선언할 필요가 없음
+
 public class Child {
 int ballCnt;
 	
