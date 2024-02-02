@@ -34,7 +34,7 @@ public class CalcMain {
 			int sel = sc.nextInt();
 			if (sel == 4)
 				isRun = false;
-			else {
+			else { // 이 부분 이해가 안됨
 				calcs[sel].setValue(num0, num1);
 				System.out.println("결과는 " + calcs[sel].calculate());
 			}
