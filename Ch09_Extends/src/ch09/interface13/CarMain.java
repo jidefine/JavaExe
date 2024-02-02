@@ -38,8 +38,11 @@ public static void main(String[] args) throws InterruptedException {
 		carTester.setCar(carArr[i]);
 		
 		score[i] += carTester.onOffTest();
+		System.out.printf("---OnOff 테스트 점수는 %d입니다\n", score[i]);
 		score[i] += carTester.speedTest();
+		System.out.printf("---Speed 테스트 점수는 %d입니다\n", score[i]);
 		score[i] += carTester.footBreakTest();
+		System.out.printf("---Break 테스트 점수는 %d입니다\n", score[i]);
 		score[i] += carTester.driveTest();
 		
 		System.out.printf("전체 테스트 점수는 %d입니다", score[i]);
