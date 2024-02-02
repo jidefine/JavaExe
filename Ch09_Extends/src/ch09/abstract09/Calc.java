@@ -5,7 +5,7 @@ package ch09.abstract09;
  * 3) 설계 목적, 상속을 전제
  * 4) 부모에서 정해줄 것은 정해주되, 자식마다 다른 것은 상속을 통해 구현하도록 한다.
  * */
-public abstract class Calc {
+public abstract class Calc { //abstract를 사용하면 클래스에도 abstract가 넣어줘야함
 	protected int a, b;
 
 	public void setValue(int _a, int _b) {
@@ -13,5 +13,5 @@ public abstract class Calc {
 		this.b = _b;
 	}
 	// 추상 메서드(자식이 상속받아서 구현해야 함)
-	public abstract int calculate();
+	public abstract int calculate(); //abstract는 상속이 의무임
 }
