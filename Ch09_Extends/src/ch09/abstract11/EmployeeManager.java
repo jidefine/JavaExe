@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class EmployeeManager {
 	private final int EMP_NUM = 100;// 100명 사원이 최대
-	// Employee의 자식객체들을 저장
+	// Employee 클래스에서 EMP_NUM 크기의 배열을 생성하여 Employee의 자식객체들을 저장하고, 이 배열을 empArr 변수에 할당
 	private Employee[] empArr = new Employee[EMP_NUM];
 	private int numOfEmp = 0; // 저장된 사원객체 수 = 다음 사원이 저장될 index
 
@@ -21,11 +21,11 @@ public class EmployeeManager {
 		System.out.println("1. 정규직");
 		System.out.println("2. 임시직");
 		System.out.println("3. 일용직");
-		System.out.println("4. 전체정보보기");
-		System.out.println("5. 정규직 보기");
-		System.out.println("6. 임시직 보기");
-		System.out.println("7. 일용직 보기");
-		System.out.println("8. 종료");
+		System.out.println("4. 전체정보보기"); //추가
+		System.out.println("5. 정규직 보기"); //추가
+		System.out.println("6. 임시직 보기"); //추가
+		System.out.println("7. 일용직 보기"); //추가
+		System.out.println("8. 종료");      //변경 
 		System.out.println("번호 입력 >> ");
 		int sel = sc.nextInt();
 		return sel; // 입력
@@ -108,7 +108,8 @@ public class EmployeeManager {
 //	}
 	private void viewRegEmployeeInfo() {
 		for(int i=0;i<this.numOfEmp;i++) {
-			Employee emp = this.empArr[i];
+			// 배열 empArr에서 i번째 인덱스에 있는 Employee 객체를 가져와서 emp라는 변수에 할당
+			Employee emp = this.empArr[i]; 
 			if(emp instanceof RegularEmployee)
 				this.empArr[i].showEmployeeInfo();
 		}
@@ -174,7 +175,7 @@ public class EmployeeManager {
 			// emp객체가 존재한다면
 			if (emp != null) {
 				boolean isSave = saveEmployee(emp);
-				if (!isSave) { // !가 왜 붙지?
+				if (!isSave) { // !는 논리 부정 연산자
 					System.out.println("더 이상 저장 공간 없음");
 				}
 			}
