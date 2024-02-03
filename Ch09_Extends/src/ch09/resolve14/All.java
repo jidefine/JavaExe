@@ -6,6 +6,7 @@ public abstract class All {
 	protected String kindOfInterface;
 	protected int numOfPrint;
 	
+	// All 클래스의 생성자를 정의
 	public All(String modelName, String company, 
 			String kindOfInterface, int numOfPrint) {
 		this.name = modelName;
@@ -22,6 +23,6 @@ public abstract class All {
 		System.out.println("인쇄매수 : " + numOfPrint);
 		
 	}
-	public abstract int now();	// 추상메서드
+	public abstract int nowPaper();	// 추상메서드
 
 }
