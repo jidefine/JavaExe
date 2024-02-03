@@ -17,7 +17,7 @@ public class printerManager {
 		System.out.println("5. 종료");
 		System.out.println("번호 입력 >> ");
 		int sel = sc.nextInt(); // 번호를 입력받아서 정수형의 sel이라는 변수에 저장
-		return sel; // 변수 sel을 리턴
+		return sel; // 변수 sel를 리턴
 	}
 
 	private InkjetPrinter createInkjetPrinter() {
