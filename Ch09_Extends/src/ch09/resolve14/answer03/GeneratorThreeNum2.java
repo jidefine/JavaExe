@@ -4,6 +4,10 @@ import java.util.Arrays;
 
 public class GeneratorThreeNum2 implements ThreeNum {
 	int[] nums = new int[3];
+	
+	public int[] nums() {
+        return nums;
+    }
 
 	@Override
 	public void num1() {
@@ -15,7 +19,7 @@ public class GeneratorThreeNum2 implements ThreeNum {
 	}
 
 	@Override
-	public void num2() {
+	public void num2() { // 왜 동일한 수가 나오지?
 		do {
 			this.nums[1] = (int)(Math.random() * 10);
 		}while(nums[1] == nums[0]); // num2과 num1가 같으면 다시 난수 생성

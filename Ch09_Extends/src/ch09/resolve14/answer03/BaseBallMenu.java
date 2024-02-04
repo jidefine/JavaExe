@@ -8,11 +8,11 @@ public class BaseBallMenu {
 
 	public int[] userNums() {
 		int[] userNums = new int[3];
-		System.out.println("첫번째 숫자 입력 >> ");
+		System.out.print("첫번째 숫자 입력 >> ");
 		userNums[0] = sc.nextInt();
-		System.out.println("두번째 숫자 입력 >> ");
+		System.out.print("두번째 숫자 입력 >> ");
 		userNums[1] = sc.nextInt();
-		System.out.println("세번째 숫자 입력 >> ");
+		System.out.print("세번째 숫자 입력 >> ");
 		userNums[2] = sc.nextInt();
 		return userNums; // 입력
 	}
