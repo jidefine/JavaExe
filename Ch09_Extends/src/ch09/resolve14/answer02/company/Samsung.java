@@ -8,6 +8,7 @@ public class Samsung implements ITablet{
 	public void movie() throws InterruptedException {
 		System.out.println("영화가 버퍼링 없이 잘 실행된다~SS");
 		Thread.sleep((long)(Math.random()*500) + 500);
+		//0.0 이상 1.0 미만의 난수(랜덤한 실수)를 생성
 		
 	}
 

@@ -24,7 +24,7 @@ public class ITabletTester {
 			tablet.movie();
 		}
 		return (int)(Math.random()*5) + 5; // 5이상~9이하
-		//Math.random : 실수값들 중에서 랜덤
+		//Math.random : 0.0 이상 1.0 미만의 난수(랜덤한 실수)를 생성
 	}
 	public int musicTest() throws InterruptedException {
 		for(int i=0;i<TEST_NUM;i++) {
