@@ -30,12 +30,12 @@ public class GeneratorThreeNum2 implements ThreeNum {
 		System.out.println("num3 : " + Nums[2]);
 	}
     
-	public static void main(String[] args) {
-		GeneratorThreeNum2 run = new GeneratorThreeNum2();
-		run.num1();
-		run.num2();
-		run.num3();
-        int[] Nums = run.Nums;
-		System.out.println(Arrays.toString(Nums));
-	}
+//	public static void main(String[] args) {
+//		GeneratorThreeNum2 run = new GeneratorThreeNum2();
+//		run.num1();
+//		run.num2();
+//		run.num3();
+//        int[] Nums = run.Nums;
+//		System.out.println(Arrays.toString(Nums));
+//	}
 }
