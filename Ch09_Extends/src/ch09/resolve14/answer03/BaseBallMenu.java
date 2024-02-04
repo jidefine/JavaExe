@@ -16,9 +16,9 @@ public class BaseBallMenu {
 		userNums[2] = sc.nextInt();
 		return userNums; // 입력
 	}
-	public static void main(String[] args) {
-		BaseBallMenu menu = new BaseBallMenu();
-        int[] userNums = menu.userNums();
-		System.out.println(Arrays.toString(userNums));
-	}
+//	public static void main(String[] args) {
+//		BaseBallMenu menu = new BaseBallMenu();
+//        int[] userNums = menu.userNums();
+//		System.out.println(Arrays.toString(userNums));
+//	}
 }
