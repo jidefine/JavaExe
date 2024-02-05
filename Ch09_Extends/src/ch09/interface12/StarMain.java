@@ -3,6 +3,7 @@ package ch09.interface12;
 public class StarMain {
 	public static void walk(StarUnit[] units) {
 		for(StarUnit unit : units) {
+			// unit에 어떤 객체가 들어가느냐에 따라 해당 객체의 walk()가 실행됨
 			unit.walk();
 		}
 	}
