@@ -1,4 +1,4 @@
-package ch09.resolve14;
+package ch09.resolve14.answer01;
 
 public abstract class All {
 	protected String name;

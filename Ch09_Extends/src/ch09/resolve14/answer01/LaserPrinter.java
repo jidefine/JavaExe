@@ -1,4 +1,4 @@
-package ch09.resolve14;
+package ch09.resolve14.answer01;
 
 public class LaserPrinter extends All{
 	protected int toner = 100; // 원래 토너양을 100으로 임의 설정

@@ -1,4 +1,4 @@
-package ch09.resolve14;
+package ch09.resolve14.answer01;
 
 public class InkjetPrinter extends All{
 	protected int ink = 100; // 원래 잉크양을 100으로 임의 설정
