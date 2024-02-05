@@ -1,4 +1,4 @@
-package ch10.collection01.ch15.sec03.exam2;
+package ch10.collection01.ch15.sec03.exam02;
 
 public class Member {
 	public String name;
