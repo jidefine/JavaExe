@@ -35,7 +35,11 @@ public static void main(String[] args) throws InterruptedException {
 	int[] score = new int[carArr.length];
 	
 	for(int i=0;i<carArr.length; i ++) {
-		carTester.setCar(carArr[i]);
+		/* [객체 지향 관련 용어]
+		 * (Dependency Injection) : 의존성 주입
+		 * IoC(Inversion of Control) : 역제어
+		 */
+		carTester.setCar(carArr[i]); // 실제 제어는 ICar의 carArr[]배열이 함
 		
 		score[i] += carTester.onOffTest();
 		System.out.printf("---OnOff 테스트 점수는 %d입니다\n", score[i]);
