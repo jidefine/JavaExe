@@ -37,9 +37,9 @@ public static void main(String[] args) {
 	 
 	 //엔트리 Set 컬렉션을 얻고, 반복해서 키와 값을 얻기
 	 Set<Entry<String,Integer>> entrySet = map.entrySet();
-	 Iterator<Entry<String, Integer>> entryiterator = entrySet.iterator();
+	 Iterator<Entry<String, Integer>> entryIterator = entrySet.iterator();
 	 while (entryIterator.hasNext()) {
-		 Entry<String, Integer> entry = entryiterator.next();
+		 Entry<String, Integer> entry = entryIterator.next();
 		 String k = entry.getKey();
 		 Integer v = entry.getValue();
 		 System.out.println(k + " : " + v);
