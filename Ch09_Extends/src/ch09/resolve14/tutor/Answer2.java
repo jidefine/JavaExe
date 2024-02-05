@@ -30,7 +30,8 @@ public class Answer2 implements IQuestionAnswer {
 
 		for (int i = 0; i < tabletArr.length; i++) {
 			/*
-			 * [객체 지향 관련 용어] (Dependency Injection) : 의존성 주입 IoC(Inversion of Control) : 역제어
+			 * [객체 지향 관련 용어] (Dependency Injection) : 의존성 주입 
+			 * IoC(Inversion of Control) : 역제어
 			 */
 			tabletTester.setITablet(tabletArr[i]); // 실제 제어는 ICar의 carArr[]배열이 함
 
