@@ -22,7 +22,7 @@ public class InkjetPrinter extends All{
 	
 	@Override
 	public void printer() { 
-		super.printer(); // All의 printerInfoInfo() 실행
+		super.printer(); // All의 printer() 실행
 		System.out.println("기존 잉크 : " + ink);
 		System.out.println("~ ~ ~ ~ ~ ~ ~ ~ ~");
 		System.out.printf("잉크 잔량 : %d \n", nowInk());
