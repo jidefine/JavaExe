@@ -2,6 +2,7 @@ package ch09.resolve14.tutor;
 
 import java.util.Scanner;
 
+
 public class Answer1 implements IQuestionAnswer {
 
 	@Override
@@ -28,7 +29,21 @@ public class Answer1 implements IQuestionAnswer {
 	@Override
 	public void answer(Scanner sc) {
 		sc.nextLine(); //Enter 치기 전까지 멈춰 있음
-		System.out.println("1번 문제 실행");
+		
+		ch09.resolve14.tutor.question01.InkjetPrinter ijp = 
+				new ch09.resolve14.tutor.question01.InkjetPrinter("HP-264", "HP", ch09.resolve14.tutor.question01.P_INTERFACE.USB, 20, 100, 50);
+		ijp.print();
+		ijp.print();
+		ijp.print();
+		System.out.println(ijp);
+		
+		ch09.resolve14.tutor.question01.LaserPrinter lp = 
+				new ch09.resolve14.tutor.question01.LaserPrinter("Sansung-111", "Sansung", ch09.resolve14.tutor.question01.P_INTERFACE.PARALLEL_PORT, 20, 100, 100);
+		lp.print();
+		lp.print();
+		lp.print();
+		System.out.println(lp);
+		
 		sc.nextLine();
 	}
 
