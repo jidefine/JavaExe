@@ -19,9 +19,9 @@ public class Answer1 implements IQuestionAnswer {
 				+ "그리고 실행 프로그램을 작성해서 동작시키세요\r\n"
 				+ "\r\n"
 				+ "\r\n"
-				+ "                  프린터\r\n"
+				+ "                  프린터\r\n" // 윈도우 에디터는 숨은 에디터가 \r\n임
 				+ "\r\n"
-				+ "잉크젯프린터             레이저프린터";
+				+ "잉크젯프린터             레이저프린터\r\n\r\n";
 		System.out.println(qusetion);
 	}
 
@@ -30,6 +30,11 @@ public class Answer1 implements IQuestionAnswer {
 		sc.nextLine(); //Enter 치기 전까지 멈춰 있음
 		System.out.println("1번 문제 실행");
 		sc.nextLine();
+	}
+
+	@Override
+	public boolean isRun() {	
+		return true;
 	}
 
 }

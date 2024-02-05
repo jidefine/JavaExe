@@ -6,7 +6,8 @@ public class QuestionMain {
 	IQuestionAnswer[] qaArr = {
 			new Answer1(),
 			new Answer2(),
-			new Answer3()
+			new Answer3(),
+			new Exit()
 	};
 	
 	public int getSelectMenuQusetion(Scanner sc) {
@@ -28,11 +29,12 @@ public class QuestionMain {
 		while(isRun) {
 			qm.printQusetion();
 			int sel = qm.getSelectMenuQusetion(sc);
-			//1 이상 ~ 3이하으 값 입력
+			// 인덱스는 입력값보다 1작으므로
 			if(sel >=1 && sel <= qm.qaArr.length) {
-				//0 이상 ~ 2 이하의 인덱스로 변환
+
 			IQuestionAnswer iqa = qm.qaArr[sel-1];
 			iqa.answer(sc);
+			isRun = iqa.isRun();
 			}
 			else
 				System.out.println("End");
