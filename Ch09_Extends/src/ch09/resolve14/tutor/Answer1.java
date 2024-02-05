@@ -29,8 +29,7 @@ public class Answer1 implements IQuestionAnswer {
 	public void answer(Scanner sc) {
 		sc.nextLine(); //Enter 치기 전까지 멈춰 있음
 		System.out.println("1번 문제 실행");
-		
-
+		sc.nextLine();
 	}
 
 }
