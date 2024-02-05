@@ -5,6 +5,7 @@ import ch09.interface13.ICar;
 public class CarTester {
 	private final int TEST_NUM = 3;
 	private ICar car;
+	//의존관계
 	/* 외부에서 주입
 	 * CarTest는 ICar에 의존적이다.
 	 */
