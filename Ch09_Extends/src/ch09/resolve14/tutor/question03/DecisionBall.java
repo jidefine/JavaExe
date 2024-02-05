@@ -7,14 +7,14 @@ public class DecisionBall {
 		
 		int strike = 0, ball = 0;
 		for(int i=0;i<comArr.length;i++) {
-			for(int j=0;j<userArr.length;j++) {
-				if(comArr[i] == userArr[j]) {
-					if(i==j)
+			for (int j = 0; j < userArr.length; j++) {
+				if (comArr[i] == userArr[j]) {
+					if (i == j)
 						strike++;
 					else
 						ball++;
-					}
-						}
+				}
+			}
 		}
 		
 		if(strike==3)
