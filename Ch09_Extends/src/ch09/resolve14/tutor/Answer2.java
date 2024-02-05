@@ -44,7 +44,7 @@ public class Answer2 implements IQuestionAnswer {
 			 */
 			tabletTester.setITablet(tabletArr[i]); // 실제 제어는 ICar의 carArr[]배열이 함
 			
-			int movie=0, music=0, readbook=0;
+			int movie=0, music=0, readBook=0;
 			try {
 			movie = tabletTester.movieTest();
 			System.out.printf("---movie 테스트 점수는 %d입니다\n", movie);
@@ -52,7 +52,10 @@ public class Answer2 implements IQuestionAnswer {
 			System.out.printf("---music 테스트 점수는 %d입니다\n", movie);
 			readBook = tabletTester.readBookTest();
 			System.out.printf("---readBook 테스트 점수는 %d입니다\n", movie);
+			}catch(Exception ex) {
+				ex.printStackTrace();
 			}
+			score[i] = movie + music + readBook;
 			
 			System.out.printf("전체 테스트 점수는 %d입니다", score[i]);
 			System.out.println("---------------------------------------");
@@ -66,10 +69,9 @@ public class Answer2 implements IQuestionAnswer {
 			}
 				
 		}
-		System.out.printf("가장 높은 점수를 받은 차는 %d번째 차이고 점수는 %d입니다\n",
+		System.out.printf("가장 높은 점수를 받은 태블릿은 %d번째 차이고 점수는 %d입니다\n",
 				maxIdx+1, max);
 		System.out.println(tabletArr[maxIdx].getClass().getName()); // 모르겠음
-	
 		sc.nextLine();
 	}
 
