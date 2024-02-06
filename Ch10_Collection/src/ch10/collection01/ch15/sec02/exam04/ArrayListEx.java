@@ -18,7 +18,7 @@ import java.util.List;
  * 인터페이스는 메서드만 정해주고 빈 껍데이기에 불가함
  */
 /* ArrayList는 배여로 구성되어 있다.\
- * 디민 베얄버디 나은 점은 데이터가 배열을 꽉 채우면 알아서 내부 공간을 늘려준다.
+ * 디민 배열보다 나은 점은 데이터가 배열을 꽉 채우면 알아서 내부 공간을 늘려준다.
  * 그리고 <>사이에 어떤 자료형을 넣는냐에 따라 해당 자료형을 저장할 수 있다.
  * 
  * List 인터페이스를 상속받았고 List계열 클래스는 List로 변수를 저장해서 사용
@@ -33,7 +33,7 @@ import java.util.List;
  * 
  * 데이터의 양이 많고, 읽기 전용인 경우 그리고 순차 검색인 경우는 가장 빠른 성능을 가지고 있다.
  */
-// 지바의 모든 클래스는 Object 클래승 상속되었음
+// 지바의 모든 클래스는 Object 클래스를 상속되었음
 public class ArrayListEx {
 	public static void main(String[] args) {
 		// <String> → Generic 문법
