@@ -16,9 +16,9 @@ public static void main(String[] args) {
 	long endTime;
 	
 	// ArrayList 컬렉션에 저장하는 시간 측정
-	startTime = System.nanoTime();
+	startTime = System.nanoTime(); // nanoTime: cpu의 시간
 	for(int i=0; i<10000; i++) {
-		list1.add(0,String.valueOf(i));
+		list1.add(0,String.valueOf(i)); // 인덱스 0에 저장
 	}
 	endTime = System.nanoTime();
 	System.out.printf("%-17s &8d ns \n", "ArrayList 걸린 시간: ", (endTime-startTime));
@@ -26,7 +26,7 @@ public static void main(String[] args) {
 	//LinkedList 컬렉션에 저장하는 시간 측정
 	startTime = System.nanoTime();
 	for(int i=0; i<10000; i++) {
-		list2.add(0,String.valueOf(i));
+		list2.add(0,String.valueOf(i)); // 인덱스 0에 저장 → 데이버들이 뒤로 밀림
 	}
 	endTime = System.nanoTime();
 	System.out.printf("%-17s &8d ns \n", "LinkedList 걸린 시간: ", (endTime-startTime));
