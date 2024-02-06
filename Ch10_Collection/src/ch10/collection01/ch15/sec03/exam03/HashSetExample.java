@@ -3,17 +3,22 @@ package ch10.collection01.ch15.sec03.exam03;
 import java.util.*; // 이게 뭐지?
 
 public class HashSetExample {
+
 public static void main(String[] args) {
 	// HashSet 컬렉션 생성
 	Set<String> set = new HashSet<String>();
-	
-	//객체 cnrk
+	// set은 ㄱ
+	//객체 
 	set.add("Java");
 	set.add("JDBC");
 	set.add("JSP");
 	set.add("Java");
 	set.add("Spring");
 	
+	/*다른 컬렉션들도 Iterator 인터페이스 상속을 맏아 구현하여
+	 *
+	 * 
+	 */
 	//객체를 하나씩 가져와서 처리
 	Iterator<String> iterator = set.iterator();
 	while(iterator.hasNext()) {
