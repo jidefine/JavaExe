@@ -1,5 +1,5 @@
 package ch10.collection01.ch15.sec05.exam04;
-
+// 2/6 이 폴더까지 진도 나감
 import java.util.TreeSet;
 
 public class ComparatorExample {
