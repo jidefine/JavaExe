@@ -1,18 +1,17 @@
 package ch10.collection02.inkedlist01;
 
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Scanner;
 // [문제] 각 사원별로 정보보기 기능을 추가하세요
 
 public class EmployeeManager {
-	private final int EMP_NUM = 100;// 100명 사원이 최대
-	// Employee 클래스에서 EMP_NUM 크기의 배열을 생성하여 Employee의 자식객체들을 저장하고, 이 배열을 empArr 변수에 할당
-	private Employee[] empArr = new Employee[EMP_NUM];
-	private int numOfEmp = 0; // 저장된 사원객체 수 = 다음 사원이 저장될 index
-
-//1. 정직원 배열 설정
-//	private final int R_NUM = 100;// 100명 정직원 사원이 최대
-//	private Employee[] rArr = new Employee[R_NUM];
-//	private int rOfEmp = 0; //
+	// 100명 사원이 최대
+	private final int EMP_NUM = 100;
+	//모든 타입의 객체를 저장하는 LinkedList(empList) 선언 
+	LinkedList<Employee>empList = new LinkedList<Employee>();
+	private int numOfEmp = 0;
 
 	private Scanner sc = new Scanner(System.in);
 
@@ -47,6 +46,7 @@ public class EmployeeManager {
 	private PartTimeEmployee createPartTimeEmployee() {
 		System.out.print("사번 >> ");
 		String empno = sc.next();
+		
 		System.out.print("이름 >> ");
 		String name = sc.next();
 		System.out.print("일급 >> ");
@@ -74,7 +74,7 @@ public class EmployeeManager {
 		boolean isSave = true;
 
 		if (this.numOfEmp < EMP_NUM) {
-			this.empArr[this.numOfEmp] = emp;
+			empList.add(emp);
 			this.numOfEmp++;
 			isSave = true;
 		} else {
@@ -83,49 +83,40 @@ public class EmployeeManager {
 		return isSave;
 	}
 
-//1. 정규직 저장
-//	private boolean saveRegular(Employee emp) {
-//		if (rOfEmp < R_NUM) {
-//			rArr[rOfEmp] = emp;
-//			rOfEmp++;
-//			return true;
-//		} else {
-//			return false;
-//		}
-//	}
-
 	private void viewAllEmployeeInfo() {
-		for (int i = 0; i < this.numOfEmp; i++) {
-			this.empArr[i].showEmployeeInfo();
+		for(int i=0;i<this.numOfEmp;i++) {
+			Employee emp = this.empList.get(i);
 		}
+//		empList.size();
+//		Iterator<Employee> iterator = empList.iterator(); //Iterator 선언 
+//		while(iterator.hasNext()){//다음값이 있는지 체크
+//		    System.out.println(iterator.next()); //값 출력
+//		}
 	}
 
-//1. 정직원만 보기
-//	private void onlyRegularEmployee() {
-//		for (int i = 0; i < rOfEmp; i++) {
-//			rArr[i].showEmployeeInfo();
-//		}
-//	}
 	private void viewRegEmployeeInfo() {
 		for(int i=0;i<this.numOfEmp;i++) {
-			// 배열 empArr에서 i번째 인덱스에 있는 Employee 객체를 가져와서 emp라는 변수에 할당
-			Employee emp = this.empArr[i]; 
-			if(emp instanceof RegularEmployee)
-				this.empArr[i].showEmployeeInfo();
+			Employee emp = this.empList.get(i);
+			if(emp instanceof PartTimeEmployee)
+				this.empList.get(i).showEmployeeInfo();
 		}
+//		Iterator<Employee> iterator = empList.iterator(); //Iterator 선언
+//		while(iterator.hasNext()){//다음값이 있는지 체크
+//			System.out.println(empList.contains(RegEmployee));
+//		}
 	}
 	private void viewTempEmployeeInfo() {
 		for(int i=0;i<this.numOfEmp;i++) {
-			Employee emp = this.empArr[i];
+			Employee emp = this.empList.get(i);
 			if(emp instanceof TempEmployee)
-				this.empArr[i].showEmployeeInfo();
+				this.empList.get(i).showEmployeeInfo();
 		}
 	}
 	private void viewPartTimeEmployeeInfo() {
 		for(int i=0;i<this.numOfEmp;i++) {
-			Employee emp = this.empArr[i];
+			Employee emp = this.empList.get(i);
 			if(emp instanceof PartTimeEmployee)
-				this.empArr[i].showEmployeeInfo();
+				this.empList.get(i).showEmployeeInfo();
 		}
 	}
 	
@@ -138,7 +129,7 @@ public class EmployeeManager {
 			switch (selNum) {
 			case EmpMenu.REG_EMP:
 				emp = createRegularEmployee();
-//				saveRegular(emp);
+
 				break;
 			case EmpMenu.TEMP_EMP:
 				emp = createPartTimeEmployee();
@@ -150,10 +141,6 @@ public class EmployeeManager {
 				emp = null; // null은 객체가 없다는 뜻
 				viewAllEmployeeInfo();
 				break;
-//			case EmpMenu.R_EMP:
-//				emp = null;
-//				onlyRegularEmployee();
-//				break;
 			case EmpMenu.REG_INFO:
 				viewRegEmployeeInfo();
 				break;
