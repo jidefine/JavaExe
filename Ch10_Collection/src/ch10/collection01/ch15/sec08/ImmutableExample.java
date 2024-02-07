@@ -10,15 +10,15 @@ import java.util.Set;
 
 public class ImmutableExample {
 	public static void main(String[] args) {
-		//List 불변 컬렉션 생성
+		//List 불변 컬렉션 생성(안전장치)
 		List<String> immutableList1 = List.of("A", "B", "C");
 		//immutableList1.add("D"); (x)
 
-		//Set 불변 컬렉션 생성
+		//Set 불변 컬렉션 생성(안전장치)
 		Set<String> immutableSet1 = Set.of("A", "B", "C");
 		//immutableSet1.remove("A"); (x)
 
-		//Map 불변 컬렉션 생성
+		//Map 불변 컬렉션 생성(안전장치)
 		Map<Integer, String> immutableMap1 = Map.of(
 				1, "A",
 				2, "B",
