@@ -8,6 +8,7 @@ public Member(String id) {
 }
 
 @Override
+//Object의 매개변수로 받아서 어떤 클래스의 어떤 클래스의 인스턴스가 대입될 수 있음
 public boolean equals(Object obj) {
 	if(obj instanceof Member target) {
 		if(id.equals(target.id)) {
