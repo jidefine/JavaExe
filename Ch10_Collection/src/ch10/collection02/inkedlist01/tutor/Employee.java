@@ -1,4 +1,4 @@
-package ch10.collection02.inkedlist01;
+package ch10.collection02.inkedlist01.tutor;
 /*
  * 다형성
  * 1) 부모클래스에 자식 객체는 담을 수 있다

@@ -1,17 +1,15 @@
-package ch10.collection02.inkedlist01;
+package ch10.collection02.inkedlist01.tutor;
 
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
-// [문제] 각 사원별로 정보보기 기능을 추가하세요
+
 
 public class EmployeeManager {
-	// 100명 사원이 최대
-	private final int EMP_NUM = 100;
-	//모든 타입의 객체를 저장하는 LinkedList(empList) 선언 
-	LinkedList<Employee>empList = new LinkedList<Employee>();
-	private int numOfEmp = 0;
+	// 
+	private List<Employee> empList = new LinkedList<>();
+	//private List<Employee> empList = new LinkedList<>();
 
 	private Scanner sc = new Scanner(System.in);
 
@@ -71,52 +69,46 @@ public class EmployeeManager {
 	}
 
 	private boolean saveEmployee(Employee emp) {
-		boolean isSave = true;
-
-		if (this.numOfEmp < EMP_NUM) {
-			empList.add(emp);
-			this.numOfEmp++;
-			isSave = true;
-		} else {
-			isSave = false;
-		}
-		return isSave;
+		return empList.add(emp);
 	}
 
 	private void viewAllEmployeeInfo() {
-		for(int i=0;i<this.numOfEmp;i++) {
-			Employee emp = this.empList.get(i);
+		for(int i=0;i<empList.size();i++) {
+			System.out.println("****** " + (i+1) + " ******");
+			Employee emp = empList.get(i);
+			emp.showEmployeeInfo();
 		}
-//		empList.size();
-//		Iterator<Employee> iterator = empList.iterator(); //Iterator 선언 
-//		while(iterator.hasNext()){//다음값이 있는지 체크
-//		    System.out.println(iterator.next()); //값 출력
+//		for(int i=0;i<this.numOfEmp;i++) {
+//			Employee emp = this.empList.get(i);
 //		}
 	}
 
 	private void viewRegEmployeeInfo() {
-		for(int i=0;i<this.numOfEmp;i++) {
-			Employee emp = this.empList.get(i);
-			if(emp instanceof PartTimeEmployee)
-				this.empList.get(i).showEmployeeInfo();
+		for(int i=0;i<empList.size();i++) {
+			Employee emp = empList.get(i);
+			if(emp instanceof RegularEmployee) {
+				System.out.println("****************");			
+				emp.showEmployeeInfo();				
+			}
 		}
-//		Iterator<Employee> iterator = empList.iterator(); //Iterator 선언
-//		while(iterator.hasNext()){//다음값이 있는지 체크
-//			System.out.println(empList.contains(RegEmployee));
-//		}
 	}
+	
 	private void viewTempEmployeeInfo() {
-		for(int i=0;i<this.numOfEmp;i++) {
-			Employee emp = this.empList.get(i);
-			if(emp instanceof TempEmployee)
-				this.empList.get(i).showEmployeeInfo();
+		for(int i=0;i<empList.size();i++) {
+			Employee emp = empList.get(i);
+			if(emp instanceof TempEmployee) {
+				System.out.println("****************");			
+				emp.showEmployeeInfo();				
+			}
 		}
 	}
 	private void viewPartTimeEmployeeInfo() {
-		for(int i=0;i<this.numOfEmp;i++) {
-			Employee emp = this.empList.get(i);
-			if(emp instanceof PartTimeEmployee)
-				this.empList.get(i).showEmployeeInfo();
+		for(int i=0;i<empList.size();i++) {
+			Employee emp = empList.get(i);
+			if(emp instanceof PartTimeEmployee) {
+				System.out.println("****************");			
+				emp.showEmployeeInfo();				
+			}
 		}
 	}
 	
@@ -163,7 +155,7 @@ public class EmployeeManager {
 			if (emp != null) {
 				boolean isSave = saveEmployee(emp);
 				if (!isSave) { // !는 논리 부정 연산자
-					System.out.println("더 이상 저장 공간 없음");
+					System.out.println("오류가 발생했습니다.");
 				}
 			}
 		}

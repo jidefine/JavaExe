@@ -1,4 +1,4 @@
-package ch10.collection02.inkedlist01;
+package ch10.collection02.inkedlist01.tutor;
 
 public class PartTimeEmployee extends Employee {
 	
