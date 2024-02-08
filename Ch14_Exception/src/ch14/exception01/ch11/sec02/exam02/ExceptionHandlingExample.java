@@ -1,5 +1,5 @@
 package ch14.exception01.ch11.sec02.exam02;
-
+// 수많은 Exception(예외)가 있음
 public class ExceptionHandlingExample {	
 	public static void main(String[] args) {
 		try {
