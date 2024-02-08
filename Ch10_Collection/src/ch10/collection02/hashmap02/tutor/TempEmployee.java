@@ -1,4 +1,4 @@
-package ch10.collection02.hashmap02;
+package ch10.collection02.hashmap02.tutor;
 
 public class TempEmployee extends Employee {
 

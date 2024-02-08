@@ -1,4 +1,4 @@
-package ch10.collection02.hashmap02;
+package ch10.collection02.hashmap02.tutor;
 
 public interface EmpMenu {
 	//public을 안 붙여도 자동으로 interface는 public으로 인식됨(?)
