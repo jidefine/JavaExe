@@ -10,7 +10,10 @@ public class AccountExample {
 		
 		//출금하기
 		try {
-			account.withdraw(30000)
+			account.withdraw(30000);
+		} catch(InsufficientException e) {
+			String message = e.getMessage();
+			System.out.println(message);
 		}
 	}
 }
