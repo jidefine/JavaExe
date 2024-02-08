@@ -7,7 +7,7 @@ public Account() {}
 public long getBalance() {
 	return balance;
 }
-public void deposi(int money) {
+public void deposit(int money) {
 	balance += money;
 }
 public void withdraw(int money)throws InsufficientException{
