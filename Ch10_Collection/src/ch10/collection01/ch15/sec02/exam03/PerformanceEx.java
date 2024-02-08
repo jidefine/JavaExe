@@ -15,8 +15,8 @@ public static void main(String[] args) {
 	for(int i = 0;i<64;i++) {
 		result = BigInteger.valueOf(1);
 //		result = 1;
-		for(int j = 0; j < cnt; j++) {
-			result.multiply(BigInteger.valueOf(two));
+		for(int j=0;j<cnt;j++) {
+			result = result.multiply(two);
 //			result *= 2;
 		}
 		System.out.println("result =" + result);
