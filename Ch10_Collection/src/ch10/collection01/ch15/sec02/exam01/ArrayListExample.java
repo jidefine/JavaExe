@@ -21,7 +21,7 @@ public class ArrayListExample {
 		System.out.println("총 객체 수: " + size);
 		System.out.println();
 
-		// 특정 인뎃으의 객체 가져오기
+		// 특정 인덱스의 객체 가져오기
 		Board board = list.get(2);
 		System.out.println(board.getSubject() + "\t" + board.getContent() 
 												+ "\t" + board.getWriter());
