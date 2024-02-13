@@ -9,7 +9,7 @@ public class InterruptExample {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 		}
-
+		// thread에 run()을 InterruptedException를 throw함
 		thread.interrupt();
 	}
 }
