@@ -10,7 +10,7 @@ public class SleepThread {
 			try {
 				Thread.sleep(3000);
 			} catch (InterruptedException e) {
-
+				// Interrupt 메서드가 호출되면 실행
 			}
 		}
 	}
