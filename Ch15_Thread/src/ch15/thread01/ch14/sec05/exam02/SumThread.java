@@ -12,6 +12,11 @@ public class SumThread extends Thread {
 	public void run() {
 		for(int i=1; i<=100; i++){
 		sum+=i;
+		try {
+			Thread.sleep(10);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		}
 		}
 }
