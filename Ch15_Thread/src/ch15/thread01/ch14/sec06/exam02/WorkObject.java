@@ -12,6 +12,7 @@ public class WorkObject {
 	}
 
 	public synchronized void methodB() {
+		 // currentThread: 스레드를 실핸한 이름이 뭐냐(?)
 		Thread thread = Thread.currentThread();
 		System.out.println(thread.getName() + ": methodB 작업 실행");
 		notify();
