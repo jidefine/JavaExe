@@ -1,11 +1,11 @@
-package ch15.thread01.ch14.sec05.exam01;
+package ch15.thread01.ch14.sec05.exam02;
 
 import java.awt.Toolkit;
 
 public class SumThread extends Thread {
 	private long sum;
 	
-	private long getSum() {
+	long getSum() {
 		return sum;
 	}
 	
