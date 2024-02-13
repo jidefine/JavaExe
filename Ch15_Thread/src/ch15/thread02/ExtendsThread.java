@@ -23,12 +23,11 @@ class ShowNameThread extends Thread{
 		try {
 			sleep(50); // 0.1초씩 멈춰줌
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		}
+		System.out.println(this.getName() + "스레드 종료");
 	}
-	System.out.println(this.getName() + "스레드 종료");
 }
 public class ExtendsThread {
 	public static void main(String[] args) {
