@@ -11,7 +11,13 @@ public class ThreadA extends Thread {
 	@Override
 	public void run() {
 		for(int i=0; i<10; i++) {
-			workObject.methodA();
+			workObject.methodA();		
+//			try {
+//				sleep(300);
+//			} catch (InterruptedException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
 		}
 	}
 }
