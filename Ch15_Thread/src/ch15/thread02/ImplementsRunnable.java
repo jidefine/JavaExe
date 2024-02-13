@@ -33,10 +33,11 @@ class ShowOwnNameThread extends OwnName
 			e.printStackTrace();
 		}
 		}
+		System.out.println(this.getOwnName() + "스레드 종료");
 	}
-	System.out.println(this.getOwnName() + "스레드 종료");
 }
-public class ImplementRunnable {
+
+public class ImplementsRunnable {
 	public static void main(String[] args) {
 		//Thread 2개가 vm에 할당되어 준비하고 있는 상태
 		ShowOwnNameThread s1 = new ShowOwnNameThread("철수");
@@ -56,9 +57,4 @@ public class ImplementRunnable {
 		System.out.println("main 스레드 종료");
 		
 	}
-}
-
-
-public class ImplementsRunnable {
-
 }
