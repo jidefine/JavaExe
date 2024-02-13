@@ -2,11 +2,13 @@ package ch15.thread01.ch14.sec09.exam02;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
+// 속도향상을 위해 
+// 대용량 서버를 만들때 사용
 public class RunnableExecuteExample {
 	public static void main(String[] args) {
+		// 기본 1차원 배열 3개짜리가 1000개 층으로 쌓여있다
 		//1000개의 메일 생성
-		String[][] mails = new String[1000][3];
+		String[][] mails = new String[1000][3]; // 2차원 배열
 		for(int i=0; i<mails.length; i++) {
 			mails[i][0] = "admin@my.com";
 			mails[i][1] = "member"+i+"@my.com";
@@ -14,12 +16,14 @@ public class RunnableExecuteExample {
 		}
 		
 		//ExecutorService 생성
+		// 스레드풀은 5개의 스레드를 보유
 		ExecutorService executorService = Executors.newFixedThreadPool(5);
 		
 		//이메일을 보내는 작업 생성 및 처리 요청
 		for(int i=0; i<1000; i++) {
 			final int idx = i;
-			executorService.execute(new Runnable() {
+			// 스레드풀의 스레드(종업원)에 함수(일)를 지정해줌
+			executorService.execute(new Runnable() { // 스레드 객체
 				@Override
 				public void run() {
 					Thread thread = Thread.currentThread();
