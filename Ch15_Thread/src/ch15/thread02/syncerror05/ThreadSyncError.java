@@ -22,7 +22,7 @@ class IncThread extends Thread {
 			val.Increment();
 	}
 }
-
+//스레드가 1개일 때 값이 정상적인 것을 확인함
 public class ThreadSyncError {
 	public static void main(String[] args) {
 		Value val = new Value();
