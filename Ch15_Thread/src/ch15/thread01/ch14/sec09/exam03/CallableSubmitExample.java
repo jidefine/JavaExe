@@ -13,6 +13,7 @@ public class CallableSubmitExample {
 		//계산 작업 생성 및 처리 요청
 		for(int i=1; i<=100; i++) {
 			final int idx = i;
+			// Future 객체에 의해서 티런값 곽인 가능
 			Future<Integer> future = executorService.submit(new Callable<Integer>() {
 				@Override
 				public Integer call() throws Exception {
@@ -27,6 +28,7 @@ public class CallableSubmitExample {
 			});
 
 			try {
+				// 스레드풀 내의 임의 스레드가 call()을 처리하고 난 결과를 아래처럼 받음
 				int result = future.get();
 				System.out.println("\t리턴값: " + result);
 			} catch (Exception e) {
