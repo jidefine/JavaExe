@@ -18,7 +18,7 @@ public static void main(String[] args) {
 			}
 		}
 	};
-	
+	// 알바생 일 시작해
 	thread.start();
 	
 	for(int i=0; i<5; i++) {
