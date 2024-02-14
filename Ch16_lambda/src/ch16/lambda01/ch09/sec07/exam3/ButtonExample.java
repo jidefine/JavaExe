@@ -6,9 +6,10 @@ public class ButtonExample {
 		Button btnOk = new Button();
 
 		//Ok 버튼 객체에 ClickListener 구현 객체 주입
+		//Button 인터페이스의 자식 객체 생성 후 전달
 		btnOk.setClickListener(new Button.ClickListener() {
 			@Override
-			public void onClick() {
+			public void onClick() { // 함수 재정의
 				System.out.println("Ok 버튼을 클릭했습니다.");
 			}
 		});

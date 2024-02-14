@@ -12,7 +12,7 @@ public class HomeExample {
 		home.use2();
 
 		//익명 구현 객체가 대입된 매개변수 사용
-		home.use3(new RemoteControl() {
+		home.use3(new RemoteControl() { // 함수의 다형성
 			@Override
 			public void turnOn() {
 				System.out.println("난방을 켭니다.");

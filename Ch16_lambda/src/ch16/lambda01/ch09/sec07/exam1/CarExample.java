@@ -11,7 +11,8 @@ public class CarExample {
 		// 익명 자식 객체가 대인된 로컬변수 사용
 		car.run2();
 		
-		// 익명 자식 객체가 대입된 매개변수 사용
+		// 익명 자식 객체가 대입된 매개변수 
+		// 즉석에서 Tire의 익명 자식 객체 생성
 		car.run3(new Tire() {
 			@Override
 			public void roll() {

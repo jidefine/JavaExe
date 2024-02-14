@@ -2,6 +2,7 @@ package ch16.lambda01.ch09.sec07.exam2;
 
 public class Home {
 	//필드에 익명 구현 객체 대입
+	//rc : RemoteControl를 상속받은 객체를 가리키는 변수
 		private RemoteControl rc = new RemoteControl() {
 			@Override
 			public void turnOn() {
