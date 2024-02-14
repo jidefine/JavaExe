@@ -5,6 +5,7 @@ public class LambdaExample {
 		Person person = new Person();
 
 		//실행문이 두 개 이상인 경우 중괄호 필요
+		//Workable의 인터페이스의 work()를 구현
 		person.action(() -> {
 			System.out.println("출근을 합니다.");
 			System.out.println("프로그래밍을 합니다.");
