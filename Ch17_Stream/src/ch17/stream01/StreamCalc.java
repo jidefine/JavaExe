@@ -34,7 +34,7 @@ public static void main(String[] args) {
 	
 	//
 	nameList.stream()					// 1) 스트림 객체
-			.filter(s->s.length() >=5) 	// 2) 중간연산(참일 때 새로운 스트림
+			.filter(s->s.length() >=5) 	// 2) 중간연산(참일 때 새로운 스트림)
 			.filter(s->s.length() <10)
 			.forEach(s->System.out.print(s + ", ")); // 3) 최종연산
 	
