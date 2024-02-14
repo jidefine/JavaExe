@@ -5,6 +5,7 @@ public class LambdaExample {
 		Person person = new Person();
 
 		//실행문이 두 개 이상일 경우
+		// 매개변수 2개 받아서 return
 		person.action((x, y) -> {
 			double result = x + y;
 			return result;
@@ -12,7 +13,7 @@ public class LambdaExample {
 
 		//리턴문이 하나만 있을 경우(연산식)
 		//person.action((x, y) -> {
-		// return (x + y);
+		// return (x + y);  // x + y를 리턴
 		//});
 		person.action((x, y) -> (x + y));
 

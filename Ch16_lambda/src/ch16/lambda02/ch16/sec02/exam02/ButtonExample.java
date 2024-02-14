@@ -5,6 +5,9 @@ public class ButtonExample {
 		//Ok 버튼 객체 생성
 		Button btnOk = new Button();
 
+		/* 똑같은 버튼 클래스이지만 어떤 람다식(메서드?)를 제공하느냐에 따라 다르게 작동
+		 */
+		
 		//Ok 버튼 객체에 람다식(ClickListener 익명 구현 객체) 주입
 		btnOk.setClickListener(() -> {
 			System.out.println("Ok 버튼을 클릭했습니다.");
