@@ -1,7 +1,5 @@
 package ch18.fileio.bytestream01;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.FileInputStream;
@@ -22,32 +20,24 @@ public class DataFilterStream {
 	public static void main(String[] args) throws IOException {
 		// 출력 스트림 생성
 		OutputStream out = new FileOutputStream("data.bin");
-		// 버퍼 필터 클래스
-		BufferedOutputStream bOut = new BufferedOutputStream(out);
 		// 필터 클래스(변수값 저장에 편리한 기능 제공)
 		DataOutputStream filterOut = new DataOutputStream(out);
-		
+
 		// 저장할 변수
 		int num = 365;
 		double pi = 3.14;
-		String name = "Albert";
-		byte[] nameBuf = name.getBytes();
-		int nameLen = nameBuf.length;
 		// data.bin에 저장
 		filterOut.writeInt(num);
 		filterOut.writeDouble(pi);
 		filterOut.close();			// 출력 스트림 종료
-		
+
 		// 입력스트림을 생성해서 읽어들이자.
 		InputStream in = new FileInputStream("data.bin");
-		BufferedInputStream bIn = new BufferedInputStream(in);
-		DataInputStream filterIn = new DataInputStream(bIn);
+		DataInputStream filterIn = new DataInputStream(in);
 		int inNum = filterIn.readInt();
 		double inPi = filterIn.readDouble();
-		byte[] inNameBuf = new byte[nameLen]; // 읽어들일 길이 배열
-		filterIn.read();
 		filterIn.close(); 			// 입력 스트림 종료
-		
+
 		System.out.println("inNum=" + inNum);
 		System.out.println("inPi=" + inPi);
 	}
