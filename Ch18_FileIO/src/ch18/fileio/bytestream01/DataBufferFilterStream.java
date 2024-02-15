@@ -36,8 +36,8 @@ public class DataBufferFilterStream {
 		DataInputStream filterIn = new DataInputStream(in);
 		int inNum = filterIn.readInt();
 		double inPi = filterIn.readDouble();
-		filterIn.close(); 			// 입력 스트림 종료 
 		
+		filterIn.close(); 			// 입력 스트림 종료 
 		System.out.println("inNum=" + inNum);
 		System.out.println("inPi=" + inPi);
 	}
