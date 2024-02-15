@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
-
+// 추상화가 되어 있다 = 간소하게 처리
 /* 서버는 클라이언트의 접속을 지다린다
  * 스트림이 연결되면 서버<->클라이언드 중 누구나 서로 데이터를 송수신할 수 있다
  * 스트림이 닫히면 더이상 통신되지 않는다 * 
@@ -18,9 +18,12 @@ public class EcoServer {
 	public static void main(String[] args) {
 		final int PORT = 900;
 		try {
+			// 이 서버 프로그램이 돌아가는 화경의 ip주소를 자동으로 소켓에 할당
 			ServerSocket server = new ServerSocket(PORT);
+			System.out.println("클라이언트 접속을 기다립니다....");
 
 			// 클라이언트와 직접 통신(서비스)하는 소켓 객체 리턴
+			// 클라이언트와 연결과정(스트림 형성 과정)이 완료되면 리턴
 			Socket socket = server.accept();
 
 			// 클라이언트의 접속 신원 확인
@@ -38,12 +41,12 @@ public class EcoServer {
 			// 클라이언트와 통신 시작
 			String line;
 			while (true) {
-				line = br.readLine();
-				if (line == null)
+				line = br.readLine(); // 내부 버퍼로 부터 개행문자'/n'까지 읽어들여라
+				if (line == null) // 통신이 끊어졌다 상대방이 종료했다
 					break;
 				System.out.println("클라이언트로부터 수신 : " + line);
-				pw.println(line);
-				pw.flush();
+				pw.println(line); // 데이터 + '/n';
+				pw.flush(); // 버퍼에 남아있는 데이터 즉시 전송해
 			}
 			System.out.println("클라이언트-서버 종료");
 			pw.close();
