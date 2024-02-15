@@ -21,7 +21,7 @@ public class EcoClient {
 			 * 스트림 생성
 			 * 그리고 연결된 socket객체 리턴
 			 */
-			Socket socket = new Socket("127.0.0.1", PORT); // 절속할 IP주소를 입력
+			Socket socket = new Socket("192.168.0.50", PORT);
 			// 키보드로부터 입력받기 위한 스트림 연결(Scanner 대신)
 			BufferedReader keyboard = new BufferedReader(
 					new InputStreamReader(System.in));
@@ -29,7 +29,7 @@ public class EcoClient {
 			InputStream in = socket.getInputStream(); // 서버에서 수신 스트림
 			PrintWriter pw = new PrintWriter(new OutputStreamWriter(out)); // 전송
 			BufferedReader br = new BufferedReader(new InputStreamReader(in)); // 수신
-			
+
 			String line;
 			while(true) {
 				System.out.println("입력 >> ");
@@ -38,7 +38,7 @@ public class EcoClient {
 					break;
 				pw.println(line);
 				pw.flush();
-				
+
 				// 서버는 받은 후에 클라이언트로 echo
 				line = br.readLine();
 				System.out.println("서버로부터 echo 문자열:" + line);
