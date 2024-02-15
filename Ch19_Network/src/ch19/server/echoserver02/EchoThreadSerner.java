@@ -30,11 +30,8 @@ public class EchoThreadSerner {
 	}
 }
 
-<<<<<<< HEAD
 class EchoThread extends Thread{
-=======
-class EchoTreead extends Thread{
->>>>>>> e99c96b (Ch19_Network)
+
 	private Socket socket;
 	
 	public EchoThread(Socket socket) {
