@@ -1,13 +1,15 @@
 package ch18.fileio.charstream02;
 
-import java.io.PrintWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.io.Writer;
 
-public class PrinterWriterStream {
+public class PrintWriterStream {
 	public static void main(String[] args) throws IOException {
 		Writer wt = new FileWriter("printf.txt");
+		
+		/* Console출력 메서드를 파일출력에 사용할 수 있게 제공해주는 필터 클래스*/
 		PrintWriter out = new PrintWriter(wt);
 		out.println("PrintWriter 사용법입니다");
 		out.printf("제 나이는 %d살입니다/n", 24);
