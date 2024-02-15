@@ -21,7 +21,7 @@ public class EchoThreadSerner {
 				// 1. 클라이언트 접속(스트림이 연결되면 socket객체가 리턴된다.)
 				Socket socket = server.accept();
 				// 2. 클라이언트 담당 스레드 생성하여 통신을 전담시킨다.
-				EchoTreead echoThread = new EchoTreead(socket);
+				EchoThread echoThread = new EchoThread(socket);
 				echoThread.start();
 			}
 		}catch(Exception e) {
@@ -30,7 +30,7 @@ public class EchoThreadSerner {
 	}
 }
 
-class EchoTreead extends Thread{
+class EchoThread extends Thread{
 	private Socket socket;
 	
 	public EchoThread(Socket socket) {
