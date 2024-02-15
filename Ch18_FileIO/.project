@@ -14,11 +14,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/HappyCat.mp4</name>
-			<type>1</type>
-			<locationURI>PROJECT_LOC/HappyCat.mp4</locationURI>
-		</link>
-	</linkedResources>
 </projectDescription>
