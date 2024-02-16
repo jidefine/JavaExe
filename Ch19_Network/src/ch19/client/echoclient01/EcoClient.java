@@ -21,7 +21,7 @@ public class EcoClient {
 			 * 스트림 생성
 			 * 그리고 연결된 socket객체 리턴
 			 */
-			Socket socket = new Socket("192.168.0.50", PORT);
+			Socket socket = new Socket("127.0.0.1", PORT); // 절속할 IP주소를 입력
 			// 키보드로부터 입력받기 위한 스트림 연결(Scanner 대신)
 			BufferedReader keyboard = new BufferedReader(
 					new InputStreamReader(System.in));
