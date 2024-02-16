@@ -40,7 +40,7 @@ public class DataFilterStream {
 		
 		// 입력스트림을 생성해서 읽어들이자.
 		InputStream in = new FileInputStream("data.bin");
-		BufferedOutputStream bIn = new BufferedOutputStream(in);
+		BufferedInputStream bIn = new BufferedInputStream(in);
 		DataInputStream filterIn = new DataInputStream(bIn);
 		int inNum = filterIn.readInt();
 		double inPi = filterIn.readDouble();
