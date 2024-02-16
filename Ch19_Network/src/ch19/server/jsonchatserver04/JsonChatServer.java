@@ -137,6 +137,7 @@ class WorkerThread extends Thread {
 				 * 문자열 -> JSONObject 변환 -> cmd를 해석해서 어떤 명령인지?
 				 * */
 				JSONObject packetObj = new JSONObject(line);
+				// 명령(cmd)당 알맞은 처리를 해줌
 				processPacket(packetObj);
 				
 			}
@@ -147,9 +148,10 @@ class WorkerThread extends Thread {
 	
 	private void processPacket(JSONObject packetObj) throws IOException {
 		JSONObject ackObj = new JSONObject();
-		// 어떤 종류의 패킷을 보냈는지 분휴하기 위한 정보
+		// 어떤 종류의 패킷을 보냈는지 분류하기 위한 정보
 		String cmd = packetObj.getString("cmd");
 		
+		// id 등록 요청
 		if(cmd.equals("ID")) {
 			// 클라이언트 요청 처리
 			String id = packetObj.getString("id");
@@ -164,7 +166,9 @@ class WorkerThread extends Thread {
 			PrintWriter pw = new PrintWriter(new OutputStreamWriter(out));
 			pw.println(ack);
 			pw.flush();
-		}else if(cmd.equals("ARITH")) {
+		}
+		// 사칙연산 업무 결과 요청
+		else if(cmd.equals("ARITH")) {
 			// 요청 처리
 			String id = packetObj.getString("id");
 			String op = packetObj.getString("op");
@@ -183,7 +187,9 @@ class WorkerThread extends Thread {
 			PrintWriter pw = new PrintWriter(new OutputStreamWriter(out));
 			pw.println(ack);
 			pw.flush();
-		}else if(cmd.equals("ALLCHAT")) {
+		}
+		// 접속자 전체한테 채팅 메시지 전송
+		else if(cmd.equals("ALLCHAT")) {
 			String id = packetObj.getString("id");
 			String msg = packetObj.getString("msg");
 			
@@ -256,7 +262,7 @@ class WorkerThread extends Thread {
 			String id = idIter.next();
 			Socket sock = (Socket) ht.get(id);
 			
-			// 클라이언트한테는 보낼 필요가 없으므로
+			// 메시지를 보내온 클라이언트한테는 보낼 필요가 없으므로
 			if(sock==this.socket)
 				continue;
 			
