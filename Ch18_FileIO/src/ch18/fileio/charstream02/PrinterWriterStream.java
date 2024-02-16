@@ -1,9 +1,12 @@
 package ch18.fileio.charstream02;
 
 import java.io.PrintWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
 
 public class PrinterWriterStream {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		Writer wt = new FileWriter("printf.txt");
 		PrintWriter out = new PrintWriter(wt);
 		out.println("PrintWriter 사용법입니다");
