@@ -41,7 +41,7 @@ public class EchoServer {
 			// 클라이언트와 통신 시작
 			String line;
 			while (true) {
-				line = br.readLine(); // 내부 버퍼로 부터 개행문자'/n'까지 읽어들여라
+				line = br.readLine(); // 내부 버퍼로 부터 개행문자'/n'(=Line)까지 읽어들여라
 				if (line == null) // 통신이 끊어졌다 상대방이 종료했다
 					break;
 				System.out.println("클라이언트로부터 수신 : " + line);
