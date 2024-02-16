@@ -207,7 +207,7 @@ class WorkerThread extends Thread {
 			
 			// 특정 yourid 사용 클라이언트에 전송 패킷
 			JSONObject broadObj = new JSONObject();
-			broadObj.put("cmd", "ALLCHAT");
+			broadObj.put("cmd", "BROADCHAT");
 			broadObj.put("id", id);
 			broadObj.put("msg", msg);
 			String strBroad = broadObj.toString();
