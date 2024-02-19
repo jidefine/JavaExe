@@ -1,4 +1,4 @@
-package ch19.server.jsonchatserver04;
+package ch19.server.jsonchatserver05;
 
 import java.io.BufferedReader;
 import java.io.IOException;
