@@ -24,6 +24,5 @@ public class StringWriter {
 				
 				out.close();
 				System.out.println("입력 완료");
->>>>>>> a0ec2be (ch18.fileio.charstream02.StringWriter 오류 수정)
 	}
 }

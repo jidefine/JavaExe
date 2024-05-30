@@ -29,7 +29,6 @@ public class EcoClient {
 			InputStream in = socket.getInputStream(); // 서버에서 수신 스트림
 			PrintWriter pw = new PrintWriter(new OutputStreamWriter(out)); // 전송
 			BufferedReader br = new BufferedReader(new InputStreamReader(in)); // 수신
-
 			String line;
 			while(true) {
 				System.out.println("입력 >> ");

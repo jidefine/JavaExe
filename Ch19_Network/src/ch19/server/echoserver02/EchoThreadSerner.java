@@ -31,7 +31,6 @@ public class EchoThreadSerner {
 }
 
 class EchoThread extends Thread{
-
 	private Socket socket;
 	
 	public EchoThread(Socket socket) {
